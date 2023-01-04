@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(rgb(215, 234, 235), rgb(23, 73, 88));
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.app{
+  background-color: rgba(255, 255, 255, .35);   
+  backdrop-filter: blur(5px);
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 10px;
+  min-height: 400px;
+}
+
+.app form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 300px;
+}
+
+.app__script{
+  min-width: 250px;
+  width: auto;
+  padding: 3px 5px;
+  text-align: center;
+  outline: none;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.form-control input{
+  /* width: 50px; */
+  padding: 2px 5px;
+  outline: none;
+}
+form button{
+  cursor: pointer;
+  width: 60px;
+  padding: 2px;
+  background-color: rgb(4, 114, 109);
+  color: white;
+  border-radius: 2px;
+  border: none;
+}
+
+form button:hover{
+  background-color: rgb(50, 94, 94);
+}
+.app__script::placeholder{
+  text-align: center;
+}
+
+.output{
+  width: 300px;
+  background-color: white;
+  overflow-y: scroll;
+  height: 200px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
